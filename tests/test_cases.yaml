@@ -1,0 +1,22 @@
+test_cases:
+  - id: TEST_001
+    name: 家电代工企业测试
+    input:
+      company: XX吸尘器有限公司
+      industry: appliances
+      scale: 10亿/2000人
+      business_model: 80%代工+20%自有品牌
+    expected:
+      targets: [IT总监, 销售总监, 供应链总监]
+      opportunities: [智能订单处理, 视觉质检, 智能客服]
+      
+  - id: TEST_002
+    name: 电子制造企业测试
+    input:
+      company: YY电子科技有限公司
+      industry: electronics
+      scale: 5亿/800人
+      business_model: 60%代工+40%自有品牌
+    expected:
+      targets: [IT总监, 生产总监, 质量经理]
+      opportunities: [视觉质检, 智能排产, 需求预测]

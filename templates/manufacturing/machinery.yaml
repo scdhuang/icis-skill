@@ -1,0 +1,112 @@
+industry: 制造业-机械
+sub_industries: [工业设备, 自动化设备, 精密机械, 工程机械]
+company_profile:
+  revenue_range: [1亿, 50亿]
+  employee_range: [500, 5000]
+  business_model: [代工为主, 自有品牌, 混合]
+
+core_pain_points:
+  - id: PP001
+    name: 订单处理效率
+    description: 手工录入订单，处理时间长，容易出错
+    severity: 高
+    frequency: 每天
+    
+  - id: PP002
+    name: 质量管理追溯
+    description: 质量问题难追溯，客户投诉处理慢
+    severity: 高
+    frequency: 每周
+    
+  - id: PP003
+    name: 客户需求响应
+    description: 客户咨询响应慢，信息查询困难
+    severity: 中
+    frequency: 每天
+    
+  - id: PP004
+    name: 生产排产优化
+    description: 排产依赖经验，紧急插单难处理
+    severity: 中
+    frequency: 每天
+
+interview_targets:
+  - role: IT总监
+    priority: 1
+    duration: 45min
+    key_questions:
+      - 现在用哪些系统？最大的数据孤岛在哪？
+      - 业务部门最抱怨系统什么？
+      - 如果上AI，数据准备好了吗？
+    
+  - role: 销售/市场总监
+    priority: 2
+    duration: 45min
+    key_questions:
+      - 客户最看重什么？我们靠什么赢单？
+      - 自有品牌增长瓶颈在哪？
+      - 如果AI能帮你，最想解决什么问题？
+    
+  - role: 供应链/制造总监
+    priority: 3
+    duration: 45min
+    key_questions:
+      - 从接单到出货，哪个环节最卡？
+      - 质量问题和交付延迟，哪个更头疼？
+      - 产线数据采集自动化了吗？
+
+ai_opportunities:
+  - id: AI001
+    name: 智能订单处理
+    pain_match: [PP001]
+    solution: AI智能识别订单+自动录入
+    feishu_products: [多维表格, AI插件]
+    value_proposition: 处理时间从2天降到2小时，准确率99%+
+    hook: 让IT部门从支持角色变成业务创新推动者
+    case_refs: [CASE_001, CASE_003]
+    
+  - id: AI002
+    name: 视觉质检
+    pain_match: [PP002]
+    solution: 视觉AI质检+全流程数据溯源
+    feishu_products: [飞书, 第三方AI质检]
+    value_proposition: 质检效率提升5倍，追溯时间从小时到秒
+    hook: 零缺陷出厂，客户投诉下降80%
+    case_refs: [CASE_002, CASE_005]
+    
+  - id: AI003
+    name: 智能客服
+    pain_match: [PP003]
+    solution: AI智能客服+知识库自动问答
+    feishu_products: [飞书智能客服, 知识库]
+    value_proposition: 响应时间从小时到秒，7x24小时服务
+    hook: 客户满意度从80%提升到95%
+    case_refs: [CASE_004]
+
+sell_in_strategy:
+  it_director:
+    type: 技术把关者
+    concerns: [系统稳定, 数据安全, 技术可控, 供应商实力]
+    hooks: [技术领先性, 架构先进性, 安全合规, 可扩展性]
+    objections:
+      数据安全: 支持私有化部署，已通过等保三级，数据不出厂
+      系统稳定: SLA 99.9%，7x24小时运维支持，故障分钟级响应
+    next_step: 技术方案交流+POC环境搭建
+    
+  sales_director:
+    type: 业务决策者
+    concerns: [业绩增长, 客户满意, 市场份额, 竞争压力]
+    hooks: [客户满意度提升, 响应速度, 转化率增长, 同行成功案例]
+    objections:
+      效果不确定: 可以先选一个客户/一个产品线试点，验证效果再推广
+      投入产出比: 我们输出ROI测算，6个月回本，年化收益XX%
+    next_step: POC试点+ROI测算
+    
+  supply_director:
+    type: 运营效率决策者
+    concerns: [生产效率, 质量控制, 成本控制, 交付准时]
+    hooks: [效率提升, 质量零缺陷, 成本降低, 交付准时率]
+    objections:
+      影响生产: 可以先在非关键产线试点，验证稳定后再推广
+      员工抵触: 操作简单，培训1小时上手，减轻员工重复劳动
+    next_step: 产线试点+效果对比

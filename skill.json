@@ -1,0 +1,38 @@
+{
+  "name": "icis",
+  "version": "1.0.0",
+  "description": "智能客户访谈系统 (Intelligent Customer Interview System) - 销售团队的 AI 访谈助手，帮你设计客户访谈、分析访谈记录、生成 Sell-in 策略",
+  "author": "道道虾",
+  "keywords": ["销售", "客户访谈", "sell-in", "飞书", "AI", "制造业"],
+  "homepage": "",
+  "license": "MIT",
+  "requirements": {
+    "openclaw": ">=2026.3.0",
+    "python": ">=3.8",
+    "dependencies": ["pyyaml"]
+  },
+  "entry": {
+    "cli": "scripts/icis.py",
+    "skill": "SKILL.md"
+  },
+  "commands": {
+    "plan": "生成客户访谈计划",
+    "analyze": "分析访谈记录",
+    "script": "查询销售话术",
+    "case": "查看成功案例"
+  },
+  "templates": [
+    "templates/manufacturing/appliances.yaml",
+    "templates/manufacturing/electronics.yaml",
+    "templates/manufacturing/machinery.yaml"
+  ],
+  "scripts": [
+    "scripts/icis_analyzer.py",
+    "scripts/sellin_script_lib.py",
+    "scripts/icis.py"
+  ],
+  "docs": [
+    "README.md",
+    "USER_MANUAL.md"
+  ]
+}
