@@ -252,3 +252,4 @@ icis script --type objection --context "已经有ERP了"
 
 **让每次客户拜访，都有备而战。**
 # Test update at Sat Mar  7 01:14:11 AM CST 2026
+test update
